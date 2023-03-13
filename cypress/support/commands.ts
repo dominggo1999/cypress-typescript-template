@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import { VALID_PASSWORD, VALID_USERNAME } from "cypress/config";
+import { VALID_PASSWORD } from "cypress/config";
 
 Cypress.Commands.add("loginWith", (username, password) => {
   // visit the login page
@@ -20,7 +20,7 @@ Cypress.Commands.add("loginWith", (username, password) => {
 });
 
 Cypress.Commands.add("login", () => {
-  cy.loginWith(VALID_USERNAME, VALID_PASSWORD);
+  cy.loginWith("LALALALALALA", VALID_PASSWORD);
 });
 
 declare global {
