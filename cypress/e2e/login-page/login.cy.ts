@@ -9,6 +9,8 @@ describe("Successful Login", () => {
   });
 
   it("Just testing login command", () => {
-    cy.login();
+    cy.login().then(() => {
+      cy.url().should("include", "/dashboard");
+    });
   });
 });

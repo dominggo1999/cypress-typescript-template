@@ -10,6 +10,7 @@ const config = {
       files: ["**/*.ts", "**/*.tsx"],
       parserOptions: {
         tsconfigRootDir: __dirname,
+        project: ["./tsconfig.json", "./cypress/tsconfig.json"],
       },
       rules: {
         "@typescript-eslint/no-unsafe-assignment": "off",
