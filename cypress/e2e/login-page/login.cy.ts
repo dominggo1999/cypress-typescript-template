@@ -1,4 +1,4 @@
-import { VALID_PASSWORD, VALID_USERNAME } from "config";
+import { VALID_PASSWORD, VALID_USERNAME } from "cypress/config";
 
 describe("Successful Login", () => {
   // LP-001

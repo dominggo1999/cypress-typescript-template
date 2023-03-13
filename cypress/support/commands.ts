@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import { VALID_PASSWORD, VALID_USERNAME } from "config";
+import { VALID_PASSWORD, VALID_USERNAME } from "cypress/config";
 
 Cypress.Commands.add("loginWith", (username, password) => {
   // visit the login page
