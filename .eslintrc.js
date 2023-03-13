@@ -10,11 +10,6 @@ const config = {
       files: ["**/*.ts", "**/*.tsx"],
       parserOptions: {
         tsconfigRootDir: __dirname,
-        project: [
-          "./tsconfig.json",
-          "./apps/*/tsconfig.json",
-          "./packages/*/tsconfig.json",
-        ],
       },
       rules: {
         "@typescript-eslint/no-unsafe-assignment": "off",
@@ -28,11 +23,7 @@ const config = {
   ],
   root: true,
   reportUnusedDisableDirectives: true,
-  ignorePatterns: [
-    ".eslintrc.js",
-    "**/*.config.js",
-    "**/*.config.cjs",
-  ],
+  ignorePatterns: [".eslintrc.js", "**/*.config.js", "**/*.config.cjs"],
 };
 
 module.exports = config;
